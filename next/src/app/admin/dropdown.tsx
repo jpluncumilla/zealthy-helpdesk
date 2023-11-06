@@ -16,7 +16,7 @@ export default function Dropdown({ id, status }: DropdownProps) {
         status: update
     }
     try {
-      const response = await fetch(`http://localhost:3001/helpdesk/${id}`, {
+      const response = await fetch(`https://zealthy-helpdesk-server.vercel.app/helpdesk/${id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

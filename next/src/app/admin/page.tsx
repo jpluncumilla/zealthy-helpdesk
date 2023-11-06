@@ -5,7 +5,7 @@ import '../page.module.css'
 
 export default async function Admin() {
 
-    const res = await fetch('http://localhost:3001/helpdesk', { next: { revalidate: 0 } })
+    const res = await fetch('https://zealthy-helpdesk-server.vercel.app/helpdesk', { next: { revalidate: 0 } })
     const data = await res.json()
 
   return (

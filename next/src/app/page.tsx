@@ -18,7 +18,7 @@ export default function Home() {
     }
 
     try {
-      const response = await fetch('http://localhost:3001/helpdesk', {
+      const response = await fetch('https://zealthy-helpdesk-server.vercel.app/helpdesk', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
